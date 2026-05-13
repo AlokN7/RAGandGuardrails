@@ -1,0 +1,78 @@
+Zero trust architecture (ZTA) is a design and implementation strategy of IT systems. The principle is that users and devices should not be trusted by default, even if they are connected to a privileged network such as a corporate LAN and even if they were previously verified. The principle is also known as perimeterless security or formerly de-perimeterization.
+ZTA is implemented by establishing identity verification, validating device compliance prior to granting access, and ensuring least privilege access to only explicitly-authorized resources. Most modern corporate networks consist of many interconnected zones, cloud services and infrastructure, connections to remote and mobile environments, and connections to non-conventional IT, such as IoT devices. 
+The traditional approach by trusting users and devices within a notional "corporate perimeter" or via a VPN connection is commonly not sufficient in the complex environment of a corporate network. The zero trust approach advocates mutual authentication, including checking the identity and integrity of users and devices without respect to location, and providing access to applications and services based on the confidence of user and device identity and device status in combination with user authentication. The zero trust architecture has been proposed for use in specific areas such as supply chains.
+The principles of zero trust can be applied to data access, and to the management of data. This brings about zero trust data security where every request to access the data needs to be authenticated dynamically and ensure least privileged access to resources. In order to determine if access can be granted, policies can be applied based on the attributes of the data, who the user is, and the type of environment using Attribute-Based Access Control (ABAC). This zero trust data security approach can protect access to the data.
+
+
+== Definitions ==
+Several definitions of zero trust have been proposed since the term was first used in 1994.
+
+
+=== Early definitions ===
+In April 1994, the term "zero trust" was coined by Stephen Paul Marsh in his doctoral thesis on computer security at the University of Stirling. Marsh's work studied trust as something finite that can be described mathematically, asserting that the concept of trust transcends human factors such as morality, ethics, lawfulness, justice, and judgement.
+The problems of the Smartie or M&M model of the network (the precursor description of de-perimeterisation) was described by a Sun Microsystems engineer in a Network World article in May 1994, who described firewalls' perimeter defence, as a hard shell around a soft centre, like a Cadbury Egg. 
+In 2001 the first version of the OSSTMM (Open Source Security Testing Methodology Manual) was released and this had some focus on trust. Version 3 which came out around 2007 has a whole chapter on Trust which says "Trust is a Vulnerability" and talks about how to apply the OSSTMM 10 controls based on Trust levels.
+
+
+=== NIST Definition ===
+In 2018, the US National Institute of Standards and Technology (NIST) and National Cybersecurity Center of Excellence (NCCoE) published NIST SP 800-207 – zero trust architecture. The publication defines zero trust as a collection of concepts and ideas designed to reduce the uncertainty in enforcing accurate, per-request access decisions in information systems and services in the face of a network viewed as compromised. A Zero Trust Architecture (ZTA) is an enterprise's cyber security plan that utilizes zero trust concepts and encompasses component relationships, workflow planning, and access policies. Therefore, a zero trust enterprise is the network infrastructure (physical and virtual) and operational policies that are in place for an enterprise as a product of a zero trust architecture plan.
+There are several ways to implement all the tenets of ZT; a full ZTA solution will include elements of all three:
+
+Using enhanced identity governance and policy-based access controls.
+Using micro-segmentation
+Using overlay networks or software-defined perimeters
+
+
+=== ZT-Kipling Methodology ===
+In September 2025, the European Telecommunications Standards Institute (ETSI) Technical Committee CYBER (ETSI TC CYBER) published Technical Specification (TS) 104 102, which details the ZT-Kipling methodology. The ZT-Kipling methodology defines Zero Trust (ZT) as follows: 
+
+ZT is a security strategy (or approach), which is based on no implicit trust (i.e. zero trust) in the digital world, and is designed to detect and prevent breaches, while consistently (or better continuously) verifying all users, all devices, all layers (e.g. OSI layered model Recommendation ITU-T X.200...), all applications, across all locations in real time (run-time), and applying continuous integration and continuous delivery (CI/CD) pipeline security, resulting in preventative security from all attack vectors at all stages of the attacks: thus trust becomes explicit.
+The ZT-Kipling methodology moves beyond the foundational principles of Zero Trust Architecture (ZTA) by defining a set of five mandatory, iterative steps. This methodology treats ZT as a continual and iterative process.. The core of the methodology’s systematic nature lies in its integration of the Kipling Criteria: what, why, when, where, who, and how. This set of six questions is to be systematically applied and answered for each of the five iterative steps:
+
+Step 1 - Define the protected surface;
+Step 2 - Map the transaction flows;
+Step 3 - Build a Zero Trust Architecture (ZTA);
+Step 4 - Create Zero Trust policy; and
+Step 5 - Monitor and maintain.
+This entire process is repeated throughout the lifetime of a protected surface, which must be clearly defined in Step #1 of the methodology. TS 104 102 establishes the ZT-Kipling methodology as a systematic and cyclical governance framework for Zero Trust.
+
+
+=== Other definitions ===
+In 2010 the term Zero Trust model was used by analyst John Kindervag of Forrester Research to denote stricter cybersecurity programs and access control within corporations.
+
+
+== History ==
+In 2003 the challenges of defining the perimeter to an organisation's IT systems was highlighted by the Jericho Forum, discussing the trend of what was then given the name "de-perimeterisation".
+In response to Operation Aurora, a Chinese APT attack throughout 2009, Google started to implement a zero-trust architecture referred to as BeyondCorp.
+Throughout the 2010s, zero trust architectures became more prevalent, driven in part by increased adoption of mobile and cloud services.
+In 2019 the United Kingdom National Cyber Security Centre (NCSC) recommended that network architects consider a Zero Trust approach for new IT deployments, particularly where significant use of cloud services is planned. An alternative but consistent approach is taken by NCSC, in identifying the key principles behind zero trust architectures:
+
+Single strong source of user identity
+User authentication
+Machine authentication
+Additional context, such as policy compliance and device health
+Authorization policies to access an application
+Access control policies within an application
+In September 2025, the European Telecommunications Standards Institute (ETSI) Technical Committee CYBER (ETSI TC CYBER) published Technical Specification (TS) 104 102, which details the ZT-Kipling methodology to be used to achieve Zero Trust security posture.
+
+
+== Sector adoption ==
+
+
+=== Government ===
+In the United States, Executive Order 14028 (May 2021) directed federal agencies to adopt zero trust architectures, and the Office of Management and Budget subsequently issued memorandum M-22-09 requiring agencies to meet specific zero trust security goals by the end of fiscal year 2024.
+
+
+=== Healthcare ===
+The U.S. Department of Health and Human Services has identified zero trust principles as foundational to strengthening healthcare cybersecurity. HHS's 2023 Healthcare Sector Cybersecurity concept paper cited zero trust as a key framework for protecting against ransomware and other threats targeting electronic protected health information. A December 2024 Notice of Proposed Rulemaking (NPRM) to update the HIPAA Security Rule proposes requirements consistent with zero trust principles, including mandatory multi-factor authentication, network segmentation, encryption of data at rest and in transit, technology asset inventories, and the elimination of implicit trust through the removal of the "addressable" implementation specification category.
+
+
+== See also ==
+Trust, but verify – Russian proverb
+Blast radius
+Password fatigue
+Secure access service edge
+Identity threat detection and response
+
+
+== References ==

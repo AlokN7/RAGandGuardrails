@@ -1,0 +1,78 @@
+Data loss prevention (DLP) software detects the unauthorized transmission or disclosure of sensitive data and prevents their occurrence, including data in motion (across networks), at rest (in storage), or in use (on endpoints). DLP systems have traditionally relied upon a variety of classification and enforcement mechanisms to reduce the risk of data leakage but increasingly incorporate machine learning and behavioral analytics to enhance detection accuracy. The range of environments in which DLP is used today has widened to include on-premises systems, cloud applications, and hybrid environments.
+The terms "data loss" and "data leak" are related and are often used interchangeably. Data loss incidents turn into data leak incidents when media containing sensitive information are lost and then acquired by an unauthorized party. However, a data leak is possible without losing the data on the originating side. Other terms associated with data leakage prevention include information leak detection and prevention (ILDP), information leak prevention (ILP), content monitoring and filtering (CMF), information protection and control (IPC) and extrusion prevention system (EPS), as opposed to an intrusion prevention system.
+
+
+== Categories ==
+The technological means employed for dealing with data leakage incidents can be divided into categories: standard security measures, advanced/intelligent security measures, access control and encryption, and designated DLP systems, although only the latter category is typically referred to as DLP today. Most DLP systems rely on predefined rules to identify and categorize sensitive information.
+
+
+=== Standard measures ===
+Standard security measures such as firewalls, intrusion detection systems (IDSs), and antivirus software are widely used to guard against both outsider and insider attacks. Intrusion detection systems identify unauthorized use, misuse, and abuse of computer systems by monitoring for behavior patterns that differ from legitimate users.
+
+
+=== Advanced measures ===
+Advanced security measures employ machine learning, behavioral analytics, honeypots, temporal reasoning, and activity-based verification to detect abnormal or unauthorized data access patterns. Machine learning algorithms enable systems to automatically improve through experience, identifying patterns in large datasets to enhance detection capabilities.
+
+
+=== Designated DLP systems ===
+Designated systems detect and prevent unauthorized attempts to copy, transmit, or publish sensitive data. These systems use mechanisms such as exact data matching, structured data fingerprinting, statistical methods, rule-based detection, and contextual analysis.
+
+
+== Types ==
+
+
+=== Network ===
+Network (data in motion) systems operate at egress points and analyze traffic for sensitive information being transmitted in violation of policy. Next-generation firewalls and intrusion detection systems often support DLP-like capabilities.
+
+
+=== Endpoint ===
+Endpoint (data in use) systems monitor user actions on desktops, servers, and devices, enabling controls such as blocking copying, printing, screen capture, or unauthorized email transmission.
+
+
+=== Cloud ===
+Cloud DLP monitors data within cloud services and applies controls to enforce access and usage policies. Cloud computing provides on-demand network access to shared computing resources, enabling scalable and flexible data protection strategies. 
+The two main forms of Cloud DLP include Cloud Access Security Brokers which monitor data in cloud applications which allows security policies to be more consistently enforced across disparate platforms and Cloud-native DLP services that offer data discovery and protection by using machine learning to automate the identification of sensitive data. These systems help maintain compatibility with existing on-premises DLP infrastructure while addressing issues that are unique to cloud environments such as shared responsibility models, multi-cloud data governance, and shadow IT discovery.
+
+
+=== Data identification ===
+Data identification techniques classify information as structured or unstructured. Roughly 80% of enterprise data is unstructured.
+Recent industry guidance describes data classification and policy alignment as foundational elements of effective DLP programs. Vendors also emphasize the role of integrated DLP, analytics, and automation in modern data protection strategies.
+
+
+=== Data loss protection ===
+Data distributors may intentionally or unintentionally share data with third parties, after which it is later found in unauthorized locations. DLP investigations attempt to determine the source.
+
+
+=== Data at rest ===
+"Data at rest" refers to stored data. DLP techniques include access controls, encryption, and data retention policies. Data encryption transforms readable information into an unreadable format to protect confidentiality, ensuring only authorized parties with the proper decryption key can access the original data.
+
+
+=== Data in use ===
+"Data in use" refers to data currently being accessed. DLP systems may monitor and flag unauthorized manipulation or transfer of such data.
+
+
+=== Data in motion ===
+"Data in motion" refers to data traveling across internal or external networks. DLP systems monitor and control this flow.
+
+
+== Challenges and Limitations ==
+False positive management remains a significant issue. Policies that are too broad tend to generate alerts that require manual review which may overwhelm security teams and reduce the overall effectiveness of DLP software.
+Privacy and compliance concerns can arise when an organization monitors employees. Achieving data security in such situations requires a delicate balance between adequate monitoring and taking care that individual privacy rights are not infringed upon.
+Evasion techniques exist including steganography, encryption, or manipulation of a file's format that can sometimes circumvent DLP detection methods and require continuous updating of detection software.
+The complexity of DLP policy increases substantially in global organizations due to their greater size and operation in disparate jurisdictions. DLP software in these cases must often contend with more diverse regulatory requirements, a broader range of data types, and relatively complex business processes. This makes it challenging to achieve consistent enforcement across regions and departments.
+
+
+== Regulatory drivers ==
+Regulatory compliance requirements are a primary driver of DLP adoption across industries. In healthcare, the HIPAA Security Rule requires covered entities and business associates to implement technical safeguards to protect electronic protected health information (ePHI) from unauthorized disclosure, including mechanisms to guard against unauthorized access during transmission and at rest. The proposed HIPAA Security Rule update (NPRM, December 2024) would further strengthen these requirements by mandating technology asset inventories and network mapping, which are foundational to effective DLP deployment.
+The Payment Card Industry Data Security Standard (PCI DSS) drives DLP implementation in the financial sector, as organizations must prevent cardholder data from being stored, processed, or transmitted in violation of established security policies. In the European Union, the General Data Protection Regulation (GDPR) requires organizations to implement appropriate technical measures to ensure data protection by design and by default, making DLP systems a common component of GDPR compliance strategies.
+
+
+== See also ==
+Computer security
+List of backup software
+Metadata removal tool
+Endpoint detection and response
+Endpoint security
+
+
+== References ==

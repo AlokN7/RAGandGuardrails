@@ -1,0 +1,164 @@
+Identity and access management (IAM or IdAM) or Identity management (IdM) is a framework of policies and technologies to ensure that the right users (that are part of the ecosystem connected to or within an enterprise) have the appropriate access to technology resources. IAM systems fall under the overarching umbrellas of IT security and data management. Identity and access management systems not only identify, authenticate, and control access for individuals who will be utilizing IT resources but also the hardware and applications employees need to access.
+The terms "identity management" (IdM) and "identity and access management" are used interchangeably in the area of identity access management.
+Identity-management systems, products, applications and platforms manage identifying and ancillary data about entities that include individuals, computer-related hardware, and software applications.
+IdM covers issues such as how users gain an identity, the roles, and sometimes the permissions that identity grants, the protection of that identity, and the technologies supporting that protection (e.g., network protocols, digital certificates, passwords, etc.).
+
+
+== Definitions ==
+Identity management (ID management) – or identity and access management (IAM) – is the organizational and technical processes for first registering and authorizing access rights in the configuration phase, and then in the operation phase for identifying, authenticating and controlling individuals or groups of people to have access to applications, systems or networks based on previously authorized access rights. Identity management (IdM) is the task of controlling information about users on computers. Such information includes information that authenticates the identity of a user, and information that describes data and actions they are authorized to access and/or perform. It also includes the management of descriptive information about the user and how and by whom that information can be accessed and modified. In addition to users, managed entities typically include hardware and network resources and even applications. The diagram below shows the relationship between the configuration and operation phases of IAM, as well as the distinction between identity management and access management.
+
+Access control is the enforcement of access rights defined as part of access authorization.
+Digital identity is an entity's online presence, encompassing personal identifying information (PII) and ancillary information. See OECD and NIST guidelines on protecting PII. It can be interpreted as the codification of identity names and attributes of a physical instance in a way that facilitates processing.
+
+
+== Function ==
+In the real-world context of engineering online systems, identity management can involve five basic functions:
+
+Pure identity function: Creation, management and deletion of identities without regard to access or entitlements
+User access (log-on) function: For example, a smart card and its associated data used by a customer to log on to a service or services (a traditional view)
+Service function: A system that delivers personalized, role-based, online, on-demand, multimedia (content), presence-based services to users and their devices
+Identity federation: A system that relies on federated identity to authenticate a user without knowing their password
+Audit function: Monitors bottlenecks, malfunctions and suspect behaviors
+
+
+=== Pure identity ===
+A general model of identity can be constructed from a small set of axioms, for example that all identities in a given namespace are unique, or that such identities bear a specific relationship to corresponding entities in the real world. Such an axiomatic model expresses "pure identity" in the sense that the model is not constrained by a specific application context.
+In general, an entity (real or virtual) can have multiple identities and each identity can encompass multiple attributes, some of which are unique within a given name space. The diagram below illustrates the conceptual relationship between identities and entities, as well as between identities and their attributes.
+
+In most theoretical and all practical models of digital identity, a given identity object consists of a finite set of properties (attribute values). These properties record information about the object, either for purposes external to the model or to operate the model, for example in classification and retrieval. A "pure identity" model is strictly not concerned with the external semantics of these properties.
+The most common departure from "pure identity" in practice occurs with properties intended to assure some aspect of identity, for example a digital signature or software token which the model may use internally to verify some aspect of the identity in satisfaction of an external purpose. To the extent that the model expresses such semantics internally, it is not a pure model.
+Contrast this situation with properties that might be externally used for purposes of information security such as managing access or entitlement, but which are simply stored, maintained and retrieved, without special treatment by the model. The absence of external semantics within the model qualifies it as a "pure identity" model.
+Identity management can thus be defined as a set of operations on a given identity model, or more generally, as a set of capabilities with reference to it.
+In practice, identity management often expands to express how model content is to be provisioned and reconciled among multiple identity models. The process of reconciling accounts may also be referred to as de-provisioning.
+
+
+=== User access ===
+User access enables users to assume a specific digital identity across applications, which enables access controls to be assigned and evaluated against this identity. The use of a single identity for a given user across multiple systems eases tasks for administrators and users. It simplifies access monitoring and verification, and allows the organizations to minimize excessive privileges granted to one user.  Ensuring user access security is crucial in this process, as it involves protecting the integrity and confidentiality of user credentials and preventing unauthorized access. Implementing robust authentication mechanisms, such as multi-factor authentication (MFA), regular security audits, and strict access controls, helps safeguard user identities and sensitive data. User access can be tracked from initiation to termination of user access.
+When organizations deploy an identity management process or system, their motivation is normally not primarily to manage a set of identities, but rather to grant appropriate access rights to those entities via their identities. In other words, access management is normally the motivation for identity management and the two sets of processes are consequently closely related.
+
+
+=== Services ===
+Organizations continue to add services for both internal users and by customers. Many such services require identity management to properly provide these services. Increasingly, identity management has been partitioned from application functions so that a single identity can serve many or even all of an organization's activities.
+For internal use identity management is evolving to control access to all digital assets, including devices, network equipment, servers, portals, content, applications and/or products.
+Services often require access to extensive information about a user, including address books, preferences, entitlements and contact information. Since much of this information is subject to privacy and/or confidentiality requirements, controlling access to it is vital.
+
+
+=== Identity federation ===
+
+Identity federation comprises one or more systems that share user access and allow users to log in based on authenticating against one of the systems participating in the federation. This trust between several systems is often known as a "circle of trust". In this setup, one system acts as the identity provider (IdP) and other systems act as service providers (SPs). When a user needs to access some service controlled by SP, they first authenticate against the IdP. Upon successful authentication, the IdP sends a secure "assertion" to the SP. "SAML assertions, specified using a markup language intended for describing security assertions, can be used by a verifier to make a statement to a relying party about the identity of a claimant. SAML assertions may optionally be digitally signed."
+
+
+== System capabilities ==
+In addition to creation, deletion, modification of user identity data either assisted or self-service, identity management controls ancillary entity data for use by applications, such as contact information or location.
+
+Authentication: Verification that an entity is who/what it claims to be using a password, biometrics such as a fingerprint, or distinctive behavior such as a gesture pattern on a touchscreen.
+Authorization: Managing authorization information that defines what operations an entity can perform in the context of a specific application. For example, one user might be authorized to enter a sales order, while a different user is authorized to approve the credit request for that order.
+Roles: Roles are groups of operations and/or other roles. Users are granted roles often related to a particular job or job function. Roles are granted authorizations, effectively authorizing all users which have been granted the role. For example, a user administrator role might be authorized to reset a user's password, while a system administrator role might have the ability to assign a user to a specific server.
+Delegation: Delegation allows local administrators or supervisors to perform system modifications without a global administrator or for one user to allow another to perform actions on their behalf. For example, a user could delegate the right to manage office-related information.
+Interchange: The SAML protocol is a prominent means used to exchange identity information between two identity domains. OpenID Connect is another such protocol.
+
+
+== Privacy ==
+Putting personal information onto computer networks necessarily raises privacy concerns. Absent proper protections, the data may be used to implement a surveillance society.
+Social web and online social networking services make heavy use of identity management. Helping users decide how to manage access to their personal information has become an issue of broad concern.
+
+
+== Research ==
+Research related to the management of identity covers disciplines such as technology, social sciences, humanities and the law.
+Decentralized identity management is identity management based on decentralized identifiers (DIDs).
+
+
+=== European research ===
+Within the Seventh Research Framework Programme of the European Union from 2007 to 2013, several new projects related to Identity Management started.
+The PICOS Project investigates and develops a state-of-the-art platform for providing trust, privacy and identity management in mobile communities.
+SWIFT focuses on extending identity functions and federation to the network while addressing usability and privacy concerns and leverages identity technology as a key to integrate service and transport infrastructures for the benefit of users and the providers.
+
+
+==== Ongoing projects ====
+Ongoing projects include Future of Identity in the Information Society (FIDIS), GUIDE, and PRIME.
+
+
+=== Publications ===
+Academic journals that publish articles related to identity management include:
+
+Ethics and Information Technology
+Identity in the Information Society
+Surveillance & Society
+Less specialized journals publish on the topic and, for instance, have special issues on identity such as:
+
+Online Information Review.
+
+
+=== Standardization ===
+ISO (and more specifically ISO/IEC JTC 1, SC27 IT Security techniques WG5 Identity Access Management and Privacy techniques) is conducting some standardization work for identity management (ISO 2009), such as the elaboration of a framework for identity management, including the definition of identity-related terms. The published standards and current work items includes the following:
+
+ISO/IEC 24760-1 a framework for identity management – Part 1: Terminology and concepts
+ISO/IEC 24760-2 a framework for identity management – Part 2: Reference architecture and requirements
+ISO/IEC DIS 24760-3 a framework for identity management – Part 3: Practice
+ISO/IEC 29115 entity authentication assurance
+ISO/IEC 29146 a framework for access management
+ISO/IEC CD 29003 identity proofing and verification
+ISO/IEC 29100 privacy framework
+ISO/IEC 29101 privacy architecture
+ISO/IEC 29134 privacy impact assessment methodology
+
+
+== Organization implications ==
+In each organization there is normally a role or department that is responsible for managing the schema of digital identities of their staff and their own objects, which are represented by object identities or object identifiers (OID).
+The organizational policies and processes and procedures related to the oversight of identity management are sometimes referred to as Identity Governance and Administration (IGA). How effectively and appropriately such tools are used falls within scope of broader governance, risk management, and compliance regimes.
+
+
+== Management systems ==
+An identity-management system refers to an information system, or to a set of technologies that can be used for enterprise or cross-network identity management.
+The following terms are used in relationship with "identity-management system":
+
+Access-governance system
+Identity and access management system
+Entitlement-management system
+User provisioning system
+Identity management, otherwise known as identity and access management (IAM) is an identity security framework that works to authenticate and authorize user access to resources such as applications, data, systems, and cloud platforms. It seeks to ensure only the right people are being provisioned to the right tools, and for the right reasons. As our digital ecosystem continues to advance, so does the world of identity management.
+"Identity management" and "access and identity management" (or AIM) are terms that are used interchangeably under the title of identity management while identity management itself falls under the umbrella of IT security and information privacy and privacy risk as well as usability and e-inclusion studies.
+
+
+== Standards ==
+SAML 2.0
+OAuth
+OpenID
+Liberty Alliance – A consortium promoting federated identity management
+Shibboleth (Internet2) – Identity standards targeted towards educational environments
+Global Trust Center
+Central Authentication Service
+NIST SP 800-63
+
+
+== Regulatory compliance ==
+Identity and access management systems are central to meeting regulatory requirements across multiple sectors that mandate controls over who can access sensitive information.
+The Health Insurance Portability and Accountability Act (HIPAA) Security Rule requires covered entities to implement access control mechanisms that restrict access to protected health information to authorized persons under 45 CFR 164.312(a)(1), workforce security procedures including authorization and supervision under 45 CFR 164.308(a)(3), and unique user identification to track individual system activity under 45 CFR 164.312(a)(2)(i)."Security Standards: Technical Safeguards". U.S. Department of Health and Human Services. Retrieved 31 March 2026. The December 2024 HIPAA Security Rule notice of proposed rulemaking (90 FR 898) would mandate role-based access controls, require multi-factor authentication for all access to electronic protected health information, and establish 24-hour notification requirements when workforce member access is modified or terminated."HIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information". Federal Register. 6 January 2025. Retrieved 31 March 2026.
+The Payment Card Industry Data Security Standard (PCI DSS) version 4.0 Requirement 7 mandates restriction of access to cardholder data by business need to know, Requirement 8 requires unique identification and strong authentication for all users, and both requirements map directly to IAM system capabilities."PCI DSS v4.0". PCI Security Standards Council. March 2022. Retrieved 31 March 2026. NIST Special Publication 800-53 includes comprehensive identity and access management controls in the AC (Access Control) and IA (Identification and Authentication) control families, providing the reference framework for federal agency IAM implementations."NIST SP 800-53 Rev. 5: Security and Privacy Controls". National Institute of Standards and Technology. September 2020. Retrieved 31 March 2026.
+
+
+== See also ==
+
+
+== References ==
+
+
+=== Sources ===
+Bernal Bernabe, Jorge; Hernandez-Ramos, Jose L.; Skarmeta, Antonio (2017). "Holistic Privacy-Preserving Identity Management System for the Internet of Things". Mobile Information Systems. 2017 (6384186): 1–20. doi:10.1155/2017/6384186.
+Gross, Ralph; Acquisti, Alessandro; Heinz, J. H. (2005). "Information revelation and privacy in online social networks". Workshop on Privacy in the Electronic Society; Proceedings of the 2005 ACM Workshop on Privacy in the Electronic Society. pp. 71–80. doi:10.1145/1102199.1102214. ISBN 978-1595932280. S2CID 9923609.
+Halperin, Ruth; Backhouse, James (2008). "A Roadmap for Research on Identity in the Information Society". Identity in the Information Society. 1 (1) (published 2009): 71. doi:10.1007/s12394-008-0004-0.
+ISO, IEC (2009). "Information Technology—Security Techniques—A Framework for Identity Management". ISO/IEC WD 24760 (Working draft).
+Lusoli, Wainer; Miltgen, Caroline (2009). "Young People and Emerging Digital Services: An Exploratory Survey on Motivations, Perceptions and Acceptance of Risks". JRC Scientific and Technical Reports (EUR 23765 EN) (published March 2009). doi:10.2791/68925. ISBN 9789279113307. Archived from the original on 16 March 2017. Retrieved 17 March 2009.
+Pohlman, M.B. (2008). Oracle Identity Management: Governance, Risk and Compliance Architecture. Auerbach Publications. ISBN 978-1-4200-7247-1.
+Taylor, John A.; Lips, Miriam; Organ, Joe (2009). "Identification practices in government: citizen surveillance and the quest for public service improvement". Identity in the Information Society. 1: 135. doi:10.1007/s12394-009-0007-5.
+Pounder, C. N. M. (2008). "Nine principles for assessing whether privacy is protected in a surveillance society". Identity in the Information Society. 1 (published 2009): 1. doi:10.1007/s12394-008-0002-2.
+Taylor, John A. (2008). "Zero Privacy". IEEE Spectrum. 45 (7): 20. Bibcode:2008IEEES..45g..20L. doi:10.1109/MSPEC.2008.4547499.
+Williamson, Graham; Yip, David; Sharni, Ilan; Spaulding, Kent (1 September 2009). Identity Management: A Primer. MC Press. ISBN 978-1-58347-093-0.
+
+
+== External links ==
+General Public Tutorial about Privacy and Identity Management
+Identity Management Overview (Computer Weekly)
+Secure Widespread Identities for Federated Telecommunications (SWIFT)
+Identity management and information sharing in ISO 18876 Industrial automation systems and integration
+NIST SP 800-63
