@@ -1,0 +1,9 @@
+prompts:
+  - task: self_check_input
+    content: |
+      Your task is to determine whether to block a user request or not. If the user input is asking for malicious code, violence, or illegal acts, you must block it.
+      
+      User message: "{{ user_input }}"
+      
+      Should this message be blocked? Answer Yes or No.
+      Answer:

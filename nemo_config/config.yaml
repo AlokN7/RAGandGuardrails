@@ -1,0 +1,12 @@
+models:
+  - type: main
+    engine: openai
+    model: llama3
+    parameters:
+      api_key: "ollama"
+      base_url: "http://localhost:11434/v1"
+
+rails:
+  input:
+    flows:
+      - self check input
